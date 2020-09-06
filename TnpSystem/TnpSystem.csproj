@@ -1,0 +1,514 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{84D83979-D364-40F3-B44D-56F13D3E47D1}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TnpSystem</RootNamespace>
+    <AssemblyName>TnpSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminPortal\AddUser.aspx" />
+    <Content Include="AdminPortal\AdminHome.aspx" />
+    <Content Include="AdminPortal\assets\cssdash\bootstrap.css" />
+    <Content Include="AdminPortal\assets\cssdash\custom-styles.css" />
+    <Content Include="AdminPortal\assets\cssdash\font-awesome.css" />
+    <Content Include="AdminPortal\assets\cssdash\tableStyle.css" />
+    <Content Include="AdminPortal\assets\font-awesome\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="AdminPortal\assets\fontsdash\glyphicons-halflings-regular.svg" />
+    <Content Include="AdminPortal\assets\jsdash\bootstrap.min.js" />
+    <Content Include="AdminPortal\assets\jsdash\custom-scripts.js" />
+    <Content Include="AdminPortal\assets\jsdash\custom.js" />
+    <Content Include="AdminPortal\assets\jsdash\dataTables\dataTables.bootstrap.css" />
+    <Content Include="AdminPortal\assets\jsdash\dataTables\dataTables.bootstrap.js" />
+    <Content Include="AdminPortal\assets\jsdash\dataTables\jquery.dataTables.js" />
+    <Content Include="AdminPortal\assets\jsdash\jquery-1.10.2.js" />
+    <Content Include="AdminPortal\assets\jsdash\jquery.metisMenu.js" />
+    <Content Include="AdminPortal\assets\jsdash\morris\morris-0.4.3.min.css" />
+    <Content Include="AdminPortal\assets\jsdash\morris\morris.js" />
+    <Content Include="AdminPortal\assets\jsdash\morris\raphael-2.1.0.min.js" />
+    <Content Include="AdminPortal\RemoveUser.aspx" />
+    <Content Include="AdminPortal\ViewUserAdmin.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="CoordinatorPortal\AddCompany.aspx" />
+    <Content Include="CoordinatorPortal\AddRemoveReset.aspx" />
+    <Content Include="CoordinatorPortal\assets\cssdash\bootstrap.css" />
+    <Content Include="CoordinatorPortal\assets\cssdash\custom-styles.css" />
+    <Content Include="CoordinatorPortal\assets\cssdash\font-awesome.css" />
+    <Content Include="CoordinatorPortal\assets\cssdash\NextButton.css" />
+    <Content Include="CoordinatorPortal\assets\cssdash\tableStyle.css" />
+    <Content Include="CoordinatorPortal\assets\font-awesome\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="CoordinatorPortal\assets\fontsdash\glyphicons-halflings-regular.svg" />
+    <Content Include="CoordinatorPortal\assets\jsdash\bootstrap.min.js" />
+    <Content Include="CoordinatorPortal\assets\jsdash\custom-scripts.js" />
+    <Content Include="CoordinatorPortal\assets\jsdash\custom.js" />
+    <Content Include="CoordinatorPortal\assets\jsdash\dataTables\dataTables.bootstrap.css" />
+    <Content Include="CoordinatorPortal\assets\jsdash\dataTables\dataTables.bootstrap.js" />
+    <Content Include="CoordinatorPortal\assets\jsdash\dataTables\jquery.dataTables.js" />
+    <Content Include="CoordinatorPortal\assets\jsdash\FormValidations.js" />
+    <Content Include="CoordinatorPortal\assets\jsdash\jquery-1.10.2.js" />
+    <Content Include="CoordinatorPortal\assets\jsdash\jquery.metisMenu.js" />
+    <Content Include="CoordinatorPortal\assets\jsdash\morris\morris-0.4.3.min.css" />
+    <Content Include="CoordinatorPortal\assets\jsdash\morris\morris.js" />
+    <Content Include="CoordinatorPortal\assets\jsdash\morris\raphael-2.1.0.min.js" />
+    <Content Include="CoordinatorPortal\CoordinatorHome.aspx" />
+    <Content Include="CoordinatorPortal\GenerateReport.aspx" />
+    <Content Include="CoordinatorPortal\SendNotifications.aspx" />
+    <Content Include="CoordinatorPortal\VerifyStudent.aspx" />
+    <Content Include="CoordinatorPortal\ViewDocs.aspx" />
+    <Content Include="StudentPortal\assets\cssdash\bootstrap.css" />
+    <Content Include="StudentPortal\assets\cssdash\custom-styles.css" />
+    <Content Include="StudentPortal\assets\cssdash\font-awesome.css" />
+    <Content Include="StudentPortal\assets\cssdash\NextButton.css" />
+    <Content Include="StudentPortal\assets\cssdash\tableStyle.css" />
+    <Content Include="StudentPortal\assets\font-awesome\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="StudentPortal\assets\fontsdash\glyphicons-halflings-regular.svg" />
+    <Content Include="StudentPortal\assets\jsdash\bootstrap.min.js" />
+    <Content Include="StudentPortal\assets\jsdash\custom-scripts.js" />
+    <Content Include="StudentPortal\assets\jsdash\custom.js" />
+    <Content Include="StudentPortal\assets\jsdash\dataTables\dataTables.bootstrap.css" />
+    <Content Include="StudentPortal\assets\jsdash\dataTables\dataTables.bootstrap.js" />
+    <Content Include="StudentPortal\assets\jsdash\dataTables\jquery.dataTables.js" />
+    <Content Include="StudentPortal\assets\jsdash\FormValidations.js" />
+    <Content Include="StudentPortal\assets\jsdash\jquery-1.10.2.js" />
+    <Content Include="StudentPortal\assets\jsdash\jquery.metisMenu.js" />
+    <Content Include="StudentPortal\assets\jsdash\morris\morris-0.4.3.min.css" />
+    <Content Include="StudentPortal\assets\jsdash\morris\morris.js" />
+    <Content Include="StudentPortal\assets\jsdash\morris\raphael-2.1.0.min.js" />
+    <Content Include="fonts\Barlow-Regular.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\Snippet.ttf" />
+    <Content Include="fonts\TitilliumWeb-Regular.ttf" />
+    <Content Include="Login.aspx" />
+    <Content Include="StudentPortal\assets\font-awesome\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="StudentPortal\assets\font-awesome\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="StudentPortal\assets\font-awesome\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="StudentPortal\assets\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="StudentPortal\assets\fontsdash\glyphicons-halflings-regular.eot" />
+    <Content Include="StudentPortal\assets\fontsdash\glyphicons-halflings-regular.ttf" />
+    <Content Include="StudentPortal\assets\fontsdash\glyphicons-halflings-regular.woff" />
+    <Content Include="StudentPortal\assets\fontsdash\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="StudentPortal\CompanyProfile.aspx" />
+    <Content Include="StudentPortal\FormNotSubmitted.aspx" />
+    <Content Include="StudentPortal\FormSubmitted.aspx" />
+    <Content Include="StudentPortal\MarksheetUpload.aspx" />
+    <Content Include="StudentPortal\StudentHome.aspx" />
+    <Content Include="StudentPortal\PlacementStatus.aspx" />
+    <Content Include="StudentPortal\test.aspx" />
+    <Content Include="StudentPortal\ViewStats.aspx" />
+    <Content Include="StudentPortal\Form.aspx" />
+    <Content Include="ForgotPassword.aspx" />
+    <Content Include="AdminPortal\assets\font-awesome\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="AdminPortal\assets\font-awesome\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="AdminPortal\assets\font-awesome\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="AdminPortal\assets\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="AdminPortal\assets\fontsdash\glyphicons-halflings-regular.eot" />
+    <Content Include="AdminPortal\assets\fontsdash\glyphicons-halflings-regular.ttf" />
+    <Content Include="AdminPortal\assets\fontsdash\glyphicons-halflings-regular.woff" />
+    <Content Include="AdminPortal\assets\fontsdash\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="CoordinatorPortal\assets\font-awesome\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="CoordinatorPortal\assets\font-awesome\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="CoordinatorPortal\assets\font-awesome\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="CoordinatorPortal\assets\font-awesome\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="CoordinatorPortal\assets\fontsdash\glyphicons-halflings-regular.eot" />
+    <Content Include="CoordinatorPortal\assets\fontsdash\glyphicons-halflings-regular.ttf" />
+    <Content Include="CoordinatorPortal\assets\fontsdash\glyphicons-halflings-regular.woff" />
+    <Content Include="CoordinatorPortal\assets\fontsdash\glyphicons-halflings-regulard41d.eot" />
+    <None Include="packages.config" />
+    <Content Include="LoginMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="js\jquery-2.1.4.min.js" />
+    <Content Include="js\jquery.vide.min.js" />
+    <Content Include="video\ship.jpg" />
+    <Content Include="video\ship.mp4" />
+    <Content Include="w3layouts-License.txt" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminPortal\AddUser.aspx.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\AddUser.aspx.designer.cs">
+      <DependentUpon>AddUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPortal\AdminHome.aspx.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\AdminHome.aspx.designer.cs">
+      <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPortal\CoordiReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CoordiReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\PlacementReportDeptWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlacementReportDeptWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\PlacementReportYearWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PlacementReportYearWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\RemoveUser.aspx.cs">
+      <DependentUpon>RemoveUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\RemoveUser.aspx.designer.cs">
+      <DependentUpon>RemoveUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPortal\ViewUserAdmin.aspx.cs">
+      <DependentUpon>ViewUserAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPortal\ViewUserAdmin.aspx.designer.cs">
+      <DependentUpon>ViewUserAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoordinatorPortal\AddCompany.aspx.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoordinatorPortal\AddCompany.aspx.designer.cs">
+      <DependentUpon>AddCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoordinatorPortal\AddRemoveReset.aspx.cs">
+      <DependentUpon>AddRemoveReset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoordinatorPortal\AddRemoveReset.aspx.designer.cs">
+      <DependentUpon>AddRemoveReset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoordinatorPortal\ApplicationReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ApplicationReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CoordinatorPortal\CompanyReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CompanyReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CoordinatorPortal\CoordinatorHome.aspx.cs">
+      <DependentUpon>CoordinatorHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoordinatorPortal\CoordinatorHome.aspx.designer.cs">
+      <DependentUpon>CoordinatorHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoordinatorPortal\CrystalReport1_application.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport1_application.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CoordinatorPortal\GenerateReport.aspx.cs">
+      <DependentUpon>GenerateReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoordinatorPortal\GenerateReport.aspx.designer.cs">
+      <DependentUpon>GenerateReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoordinatorPortal\PlacementReportYearWise.cs">
+      <DependentUpon>PlacementReportYearWise.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="CoordinatorPortal\SendNotifications.aspx.cs">
+      <DependentUpon>SendNotifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoordinatorPortal\SendNotifications.aspx.designer.cs">
+      <DependentUpon>SendNotifications.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoordinatorPortal\VerifyStudent.aspx.cs">
+      <DependentUpon>VerifyStudent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoordinatorPortal\VerifyStudent.aspx.designer.cs">
+      <DependentUpon>VerifyStudent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoordinatorPortal\ViewDocs.aspx.cs">
+      <DependentUpon>ViewDocs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CoordinatorPortal\ViewDocs.aspx.designer.cs">
+      <DependentUpon>ViewDocs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CoordinatorPortal\ViewUserReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewUserReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LoginMaster.Master.cs">
+      <DependentUpon>LoginMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoginMaster.Master.designer.cs">
+      <DependentUpon>LoginMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal\CompanyProfile.aspx.cs">
+      <DependentUpon>CompanyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal\CompanyProfile.aspx.designer.cs">
+      <DependentUpon>CompanyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal\FormNotSubmitted.aspx.cs">
+      <DependentUpon>FormNotSubmitted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal\FormNotSubmitted.aspx.designer.cs">
+      <DependentUpon>FormNotSubmitted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal\FormSubmitted.aspx.cs">
+      <DependentUpon>FormSubmitted.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal\FormSubmitted.aspx.designer.cs">
+      <DependentUpon>FormSubmitted.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal\MarksheetUpload.aspx.cs">
+      <DependentUpon>MarksheetUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal\MarksheetUpload.aspx.designer.cs">
+      <DependentUpon>MarksheetUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal\StudentHome.aspx.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal\StudentHome.aspx.designer.cs">
+      <DependentUpon>StudentHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal\PlacementStatus.aspx.cs">
+      <DependentUpon>PlacementStatus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal\PlacementStatus.aspx.designer.cs">
+      <DependentUpon>PlacementStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal\test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal\test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal\ViewStats.aspx.cs">
+      <DependentUpon>ViewStats.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal\ViewStats.aspx.designer.cs">
+      <DependentUpon>ViewStats.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StudentPortal\Form.aspx.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StudentPortal\Form.aspx.designer.cs">
+      <DependentUpon>Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.aspx.designer.cs">
+      <DependentUpon>ForgotPassword.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AdminPortal\assets\imgdash\" />
+    <Folder Include="CoordinatorPortal\assets\imgdash\" />
+    <Folder Include="StudentPortal\assets\imgdash\" />
+    <Folder Include="TNPSystemDocs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AdminPortal\CoordiReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CoordiReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPortal\PlacementReportDeptWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PlacementReportDeptWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPortal\PlacementReportYearWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PlacementReportYearWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoordinatorPortal\ApplicationReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ApplicationReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoordinatorPortal\CompanyReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CompanyReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoordinatorPortal\CrystalReport1_application.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport1_application.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoordinatorPortal\PlacementReportYearWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PlacementReportYearWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CoordinatorPortal\ViewUserReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ViewUserReport.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>59377</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:59377/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.5\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

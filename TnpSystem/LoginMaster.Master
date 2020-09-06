@@ -1,0 +1,61 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LoginMaster.Master.cs" Inherits="TnpSystem.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>TNP Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="taped login form Widget a Flat Responsive Widget,Login form widgets, Sign up Web forms , Login signup Responsive web form,Flat Pricing table,Flat Drop downs,Registration Forms,News letter Forms,Elements" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+    function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- Meta tag Keywords -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <link rel="stylesheet" href="css/font-awesome.css" type="text/css" media="all" />
+    <link href="//fonts.googleapis.com/css?family=Snippet" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body data-vide-bg="video/ship">
+    <form id="form1" runat="server">
+        <section class="login-maintop">
+            <div class="login-main">
+                <header>
+                    <h1>tnp login portal</h1>
+                </header>
+                <div class="login-form">
+                    <asp:ContentPlaceHolder ID="HeadText" runat="server">
+                        </asp:ContentPlaceHolder>
+
+
+                    <div>
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <div>
+                        <asp:ContentPlaceHolder ID="ForgotPassword" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                     
+                    <div class="login-input">
+                    </div>
+                   
+                </div>
+                <!--footer-->
+                <div class="footer">
+                    <p>&copy; 2018 TNP login portal. All rights reserved.</a></p>
+                </div>
+                <!--//footer-->
+            </div>
+        </section>
+        <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/jquery.vide.min.js"></script>
+
+
+    </form>
+</body>
+</html>

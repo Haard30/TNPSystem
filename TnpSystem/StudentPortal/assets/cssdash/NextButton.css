@@ -1,0 +1,45 @@
+﻿.buttonnext {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 12px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px 42px;
+    margin:20px;
+}
+
+    .buttonnext:hover {
+        background-color: black; /* Green */
+        color: white;
+    }
+
+.btn-group .buttonSide {
+    background-color: black; /* Green */
+    border: 1px solid green;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 150px;
+    display: block;
+    height:150px;
+}
+
+    .btn-group .buttonSide:not(:last-child) {
+        border-bottom: none; /* Prevent double borders */
+    }
+
+    .btn-group .buttonSide:hover {
+        background-color: #3e8e41;
+    }
+.termsx {
+    overflow-y: scroll;
+    height: 300px;
+    width: 100%;
+    border: 1px solid #DDD;
+    padding: 10px;
+}
